@@ -9,7 +9,8 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
-
+import { positions } from "@mui/system";
+import { FcApproval, FcHighPriority } from "react-icons/fc";
 import Typography from "@mui/material/Typography";
 function App() {
   return (
@@ -59,7 +60,7 @@ function App() {
                 </h1>
               </div>
               <div>
-                <span className="">
+                <span className="font-fam-the text-xs">
                   In the CELESTIAL GROUNDS there will be a tax of 5% for buy and
                   sell of tokens. This TAXES that will taken to you will going
                   to the rewards pool of our CASINO FEATURE and for MARKETING
@@ -79,7 +80,7 @@ function App() {
                 </h1>
               </div>
               <div>
-                <span>
+                <span className="font-fam-the text-xs">
                   The CELESTIAL Token will be used only on our GROUNDS, meaning
                   every transaction you made on our Website the CELESTIAL Token
                   will be used. This TOKEN can be used on CASINO,Payment for the
@@ -98,8 +99,8 @@ function App() {
                   TOKEN ALLOCATION
                 </h1>
               </div>
-              <div>
-                <span className=" text-lg text-red-500">
+              <div className="font-fam-the text-base">
+                <span className=" text-base text-red-500">
                   Total Supply: 21,000,000.
                 </span>
                 <p>60% of the TOKEN will be for PRESALE</p>
@@ -111,81 +112,226 @@ function App() {
           </div>
         </section>
         <section id="ROADMAP">
-          <div className="my-5 bg-black text-white">
-            <div>
-              <span className=" text-5xl">ROADMAP</span>
+          <div className="mt-10 bg-black color2">
+            <div className="pt-10">
+              <span className="text-5xl">ROADMAP</span>
             </div>
             <div>
               <Timeline position="alternate">
-                <TimelineItem>
+                <TimelineItem className="">
                   <TimelineOppositeContent
                     sx={{ m: "auto 0" }}
                     align="right"
-                    variant="body2"
-                    color="text.secondary"
+                    variant=""
+                    color="white"
                   >
-                    9:30 am
+                    MARCH - JULY 2023
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot></TimelineDot>
-                    <TimelineConnector />
+                    <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                    <TimelineDot
+                      color="secondary"
+                      variant="outlined"
+                      className="animate-pulse"
+                    >
+                      <FcApproval size={30} />
+                    </TimelineDot>
+                    <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Eat
-                    </Typography>
-                    <Typography>Because you need strength</Typography>
+                    <div className="border-2 flex flex-col   p-7 bg-white  rounded-lg hover:scale-[104%] ease-in max-w-[500px] hover:shadow-2xl  transition-transform duration-300  sm:place-self-center sm:h-[400px] md:h-[400px] lg:h-[300px] ">
+                      <Typography
+                        variant=""
+                        component="span"
+                        className="font-fam-the text-3xl py-5"
+                      >
+                        First Phase
+                      </Typography>
+                      <Typography
+                        className="  font-color font-mono tracking-widest"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-2 animate-pulse bg-sky-500"></span>
+                        Building our Website
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-2 animate-pulse bg-sky-500"></span>
+                        Smart Contract Creation
+                      </Typography>
+
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-2 animate-pulse bg-sky-500"></span>
+                        Community Building TG/Discord
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-2 animate-pulse bg-sky-500"></span>
+                        Pink Sale Listing for Presale
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-2 animate-pulse bg-sky-500"></span>
+                        Casual Marketing
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3  animate-pulse bg-sky-500"></span>{" "}
+                        Token Launching via PRESALE
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3  animate-pulse bg-sky-500"></span>{" "}
+                        CMC/CG Listing
+                      </Typography>
+                    </div>
                   </TimelineContent>
                 </TimelineItem>
                 <TimelineItem>
                   <TimelineOppositeContent
                     sx={{ m: "auto 0" }}
-                    variant="body2"
-                    color="text.primary"
+                    variant=""
+                    color="white"
                   >
-                    10:00 am
+                    AUG - DEC 2023
+                  </TimelineOppositeContent>
+                  <TimelineSeparator className="">
+                    <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                    <TimelineDot
+                      color="secondary"
+                      variant="outlined"
+                      className="animate-pulse"
+                    >
+                      <FcHighPriority size={30} />
+                    </TimelineDot>
+                    <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
+                  </TimelineSeparator>
+                  <TimelineContent sx={{ py: "12px", px: 2 }}>
+                    <div className="border-2 flex flex-col p-7 rounded-lg bg-white hover:scale-[104%] transition-transform ease-in text-left lg:ml-[20px] xl:ml-[170px]  duration-300  max-w-[500px] sm:place-self-center sm:h-[400px] md:h-[400px] lg:h-[300px]  ">
+                      <Typography
+                        variant=""
+                        component="span"
+                        className="font-fam-the text-3xl py-5"
+                      >
+                        Second Phase
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-4 animate-pulse bg-sky-500"></span>
+                        Launching of our JOB for HIRE FEATURE
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-4 animate-pulse bg-sky-500"></span>
+                        Launching of other CASINO games
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-2 animate-pulse bg-sky-500"></span>{" "}
+                        Team Expansion
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-2 animate-pulse bg-sky-500"></span>{" "}
+                        Starting of Creation of Market Place
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-2 animate-pulse bg-sky-500"></span>{" "}
+                        Removal of TAX for TX
+                      </Typography>
+                      <Typography
+                        className=" font-mono font-color tracking-wide"
+                        variant=""
+                      >
+                        <span class="relative inline-flex rounded-full h-3 w-3 mr-2 animate-pulse bg-sky-500"></span>{" "}
+                        CEX / DEX Listing
+                      </Typography>
+                    </div>
+                  </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                  <TimelineOppositeContent
+                    sx={{ m: "auto 0" }}
+                    variant=""
+                    color="white"
+                  >
+                    JAN - MAY 2024
                   </TimelineOppositeContent>
                   <TimelineSeparator>
-                    <TimelineConnector />
-                    <TimelineDot color="primary"></TimelineDot>
-                    <TimelineConnector />
-                  </TimelineSeparator>
-                  <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Code
-                    </Typography>
-                    <Typography>Because it&apos;s awesome!</Typography>
-                  </TimelineContent>
-                </TimelineItem>
-                <TimelineItem>
-                  <TimelineSeparator>
-                    <TimelineConnector />
+                    <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
                     <div></div>
                     <TimelineDot
-                      color="primary"
+                      color="secondary"
                       variant="outlined"
-                    ></TimelineDot>
+                      className="animate-pulse"
+                    >
+                      {" "}
+                      <FcHighPriority size={30} />
+                    </TimelineDot>
                     <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Sleep
-                    </Typography>
-                    <Typography>Because you need rest</Typography>
+                    <div className="border-2 flex flex-col p-7 rounded-lg bg-white hover:scale-[104%] transition-transform ease-in max-w-[500px] hover:shadow-2xl  duration-300  sm:place-self-center sm:h-[400px] md:h-[400px] lg:h-[300px] ">
+                      <Typography variant="h4" component="span">
+                        Third Phase
+                      </Typography>
+                      <Typography>Because you need rest</Typography>
+                    </div>
                   </TimelineContent>
                 </TimelineItem>
+
                 <TimelineItem>
+                  <TimelineOppositeContent
+                    sx={{ m: "auto 0" }}
+                    variant=""
+                    color="white"
+                  >
+                    JUNE - OCT 2024
+                  </TimelineOppositeContent>
                   <TimelineSeparator>
                     <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-                    <TimelineDot color="secondary"></TimelineDot>
-                    <TimelineConnector />
+                    <TimelineDot
+                      color="secondary"
+                      variant="outlined"
+                      className="animate-pulse"
+                    >
+                      <FcHighPriority size={30} />
+                    </TimelineDot>
+                    <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
                   </TimelineSeparator>
                   <TimelineContent sx={{ py: "12px", px: 2 }}>
-                    <Typography variant="h6" component="span">
-                      Repeat
-                    </Typography>
-                    <Typography>Because this is the life you love!</Typography>
+                    <div className="border-2 flex flex-col p-7  text-left bg-white hover:scale-[104%] transition-transform ease-in lg:ml-[20px] xl:ml-[170px]  max-w-[500px] rounded-lg sm:h-[400px] md:h-[400px] lg:h-[300px]  ">
+                      <Typography variant="h4" component="span">
+                        Fourth Phase
+                      </Typography>
+                      <Typography>
+                        Because this is the life you love!
+                      </Typography>
+                    </div>
                   </TimelineContent>
                 </TimelineItem>
               </Timeline>
