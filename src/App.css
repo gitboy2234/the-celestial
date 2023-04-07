@@ -34,3 +34,11 @@
 .font-fam-the-2{
     font-family:Carter One;
 }
+
+.bg-image{
+    background-image: url(./components/Images/picbg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+    
+}
