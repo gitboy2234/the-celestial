@@ -21,3 +21,24 @@
 
     clip-path: polygon(0 0, 93% 0, 100% 25%, 100% 100%, 5% 100%, 0 75%);
     }
+
+.color2{
+    color:#B8621B;
+}
+
+.bg-color2{
+    background-color: #262A56;
+    border-color: #262A56;
+}
+
+.font-fam-the-2{
+    font-family:Carter One;
+}
+
+.bg-image{
+    background-image: url(./components/Images/picbg3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:right;
+    
+}
