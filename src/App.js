@@ -124,7 +124,7 @@ function App() {
         </section>
 
         <section id="ROADMAP">
-          <div className="mt-10 bg-black color2  rounded-3xl mx-2">
+          <div className="mt-10 bg-black color2  ">
             <div className="pt-10">
               <span className="text-5xl">ROADMAP</span>
             </div>
