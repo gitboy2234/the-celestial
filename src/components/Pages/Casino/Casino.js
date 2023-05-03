@@ -1,5 +1,8 @@
 import React from "react";
 import { Component } from "react";
+import './Casino.css'
+import TextField from '@mui/material/TextField';
+import Button from '@mui/material/Button';
 var crypto = require('crypto');
 
 var currentTimeHash = crypto
@@ -7,8 +10,8 @@ var currentTimeHash = crypto
     .update(`${Date.now()}`)
     .digest('hex');
 
-
 class Casino extends Component {
+
 
     handleChange(event) {
         this.setState({ seed: event.target.value });
@@ -141,7 +144,7 @@ class Casino extends Component {
             multiplier: 2.00,
             target: 4950,
             bet: 1,
-            seed: currentTimeHash,
+
             errorMessage: '',
             lastRoll: '∞',
             lastTarget: '∞',
@@ -162,11 +165,64 @@ class Casino extends Component {
 
     render() {
         return (
-            <div>
+            <div className="w-full font-orb">
+                <div className="text-center"><h1 className="  py-10 text-5xl">Casino Game</h1></div>
+                <div className="grid grid-cols-2">
+                    <div className="text-left text-5xl ml-5 ">
+                        <div className=" text-left text-3xl ">
+                            <div className="balance">Balance: ${this.state.balance.toFixed(2)}</div>
+                        </div>
+                        <div>
+                            <div className=" text-2xl my-5 ">
+                                <TextField
+                                    disabled
+                                    id="outlined-size-small"
+                                    label="Seed"
+                                    value={this.state.seed}
+                                    defaultValue="This will be your seed for the game"
+                                    sx={{
+                                        width: 600,
+                                        maxWidth: '100%'
+                                    }}
 
+                                    onChange={this.handleChange}
+                                />
+                            </div>
+                            <div className="my-5 flex justify-left">
+                                <Button variant="contained" onClick={this.randomizeSeed}>Randomize</Button>
+                            </div>
+                            <div>
+                                <div className="flex bg my-5">
+                                    <TextField
+                                        id="outlined-number"
+                                        label="AMOUNT TO BET!"
+                                        type="number"
+                                        color="warning"
+                                        InputLabelProps={{
+                                            shrink: true,
+                                        }}
+                                    />
+                                    <div className="h-[55px] border-2 rounded-lg w-[70px] shadow-xl text-center  text-2xl pt-3 bg-slate-600">BNB</div>
+                                </div>
+                                <div className="flex bg">
+                                    <TextField
+                                        id="outlined-number"
+                                        label="MULTIPLIER"
+                                        type="number"
+                                        color="warning"
+                                        InputLabelProps={{
+                                            shrink: true,
+                                        }}
+                                    />
+                                    <div className="h-[55px] border-2 rounded-lg w-[50px] shadow-xl text-center  text-2xl pt-2 bg-slate-600">X</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
 }
 
-export { Casino };
+export default Casino;
