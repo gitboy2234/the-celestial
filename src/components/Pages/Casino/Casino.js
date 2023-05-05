@@ -3,6 +3,7 @@ import { Component } from "react";
 import './Casino.css'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
+import { Label } from 'semantic-ui-react'
 var crypto = require('crypto');
 
 var currentTimeHash = crypto
@@ -206,6 +207,8 @@ class Casino extends Component {
                                 </div>
                                 <div className="flex bg">
                                     <TextField
+                                        value={this.state.multiplier}
+                                        onChange={this.updateMultiplier}
                                         id="outlined-number"
                                         label="MULTIPLIER"
                                         type="number"
@@ -214,7 +217,8 @@ class Casino extends Component {
                                             shrink: true,
                                         }}
                                     />
-                                    <div className="h-[55px] border-2 rounded-lg w-[50px] shadow-xl text-center  text-2xl pt-2 bg-slate-600">X</div>
+                                    <div className="h-[55px] border-2 rounded-lg w-[50px] shadow-xl text-center  text-2xl pt-2 bg-slate-600" >X</div><Label pointing='left'>{(this.state.target / 100)}
+                                        %</Label>
                                 </div>
                             </div>
                         </div>

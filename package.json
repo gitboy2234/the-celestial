@@ -1,4 +1,5 @@
 {
+  "homepage": "http://renzivan243.github.io/the-celestial",
   "name": "the-celestial",
   "version": "0.1.0",
   "private": true,
@@ -19,18 +20,20 @@
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.10.0",
     "react-scripts": "5.0.1",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.4",
     "typewriter-effect": "^2.19.0",
     "web-vitals": "^2.1.4",
     "webpack": "^5.80.0"
   },
-   
-"scripts": { 
-	"start": "react-app-rewired start", 
-  "build": "react-app-rewired build", 
-  "test": "react-app-rewired test", 
-  "eject": "react-scripts eject" 
- },
-
+  "scripts": {
+    "start": "react-app-rewired start",
+    "predeploy": "npm run build",
+    "deploy":"gh-pages -d build",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -53,6 +56,7 @@
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
+    "gh-pages": "^5.0.0",
     "https-browserify": "^1.0.0",
     "os-browserify": "^0.3.0",
     "process": "^0.11.10",
