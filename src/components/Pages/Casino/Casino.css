@@ -1,0 +1,36 @@
+.casino {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.balance {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.error-message {
+    color: red;
+    margin: 10px 0;
+}
+
+.bet-history {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bet-history th,
+.bet-history td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+.bet-history th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+.font-orb{
+    font-family:Orbitron;
+    
+}
