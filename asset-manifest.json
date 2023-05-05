@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/the-celestial/static/css/main.4aa4ffa9.css",
+    "main.js": "/the-celestial/static/js/main.c547251d.js",
+    "static/media/homevid.mp4": "/the-celestial/static/media/homevid.9c5c09bcb28ab7523b7c.mp4",
+    "static/media/dice.png": "/the-celestial/static/media/dice.c1549154432003a233f4.png",
+    "static/media/lock.png": "/the-celestial/static/media/lock.edf09084e8537fd6e571.png",
+    "static/media/questionmark.png": "/the-celestial/static/media/questionmark.87adcec2c468299c12f5.png",
+    "index.html": "/the-celestial/index.html",
+    "main.4aa4ffa9.css.map": "/the-celestial/static/css/main.4aa4ffa9.css.map",
+    "main.c547251d.js.map": "/the-celestial/static/js/main.c547251d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4aa4ffa9.css",
+    "static/js/main.c547251d.js"
+  ]
+}
